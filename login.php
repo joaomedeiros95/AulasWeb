@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cadastro - WebEasy</title>
+	<title>Login - WebEasy</title>
 </head>
 <body>
 	<?php
@@ -11,7 +11,6 @@
 		<form name="form" action="" method="POST">
 			<p>Login: <input type="text" name="login" autofocus></p>
 			<p>Senha: <input type="password" name="senha"></p>
-			<p>Repita a Senha: <input type="password" name="senha1"></p>
 
 			<p><input type="submit" value="Enviar"></p>
 		</form>
@@ -19,19 +18,20 @@
 		} else {
 			$login = $_POST["login"];
 			$senha = $_POST["senha"];
-			$senha1 = $_POST["senha1"];
 
-			$errosCadastro = validarCadastro($login, $senha, $senha1);
-
-			if(count($errosCadastro) > 0) {
-				echo "Foram encontrados erros no seu cadastro. <br>";
-				for($x = 0; $x < count($errosCadastro); $x++) {
-				    echo $errosCadastro[$x];
+			$errosLogin = validarLogin($login, $senha);
+			if(count($errosLogin) > 0) {
+				for($x = 0; $x < count($errosLogin); $x++) {
+				    echo $errosLogin[$x];
 				    echo "<br>";
 				}
 			} else {
-				cadastrar($login, $senha);
-				echo "Usuário cadastrado com sucesso.";
+				$loginCorreto = verifyLogin($login, $senha);
+
+				if($loginCorreto)
+					echo "Bem vindo ao WebEasy.";
+				else
+					echo "Senha ou Login incorreto.";
 			}
 		}
 	?>
