@@ -3,7 +3,7 @@
 		$myfile = fopen("include/usuarios.txt", "r") or die("Unable to open file!");
 		while(!feof($myfile)) {
 			$linha = explode(" -- ", fgets($myfile));
-			if(strcmp($linha[0], $login) && strcmp($linha[1], md5($senha))) {
+			if(trim($linha[0]) === $login and trim($linha[1]) === md5($senha)) {
 				fclose($myfile);
 				return true;
 			}
@@ -24,6 +24,15 @@
 			$erros[] = "Login deve conter somente caracteres alfanúmericos.";
 		if($senha != $senha1)
 			$erros[] = "As senhas não são iguais.";
+
+		$myfile = fopen("include/usuarios.txt", "r") or die("Unable to open file!");
+		while(!feof($myfile)) {
+			$linha = explode(" -- ", fgets($myfile));
+			if($linha[0] === $login) {
+				$erros[] = "Já existe uma pessoa cadastrada com esse login!";
+				break;
+			}
+		}
 
 		return $erros;
 	}
