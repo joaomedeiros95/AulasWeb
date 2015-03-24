@@ -7,10 +7,7 @@
 		<h1>Obrigado pela sua contribuição!</h1>
 		<br />
 		<br />
-		<a href="cadastro.html">Voltar</a></i>
-		<br />
-		<br />
-		<p>João Eduardo Ribeiro de Medeiros - UFRN</p>
+		<a href="cadastro.php">Voltar</a></i>
 	</center>
 
 

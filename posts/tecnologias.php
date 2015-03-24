@@ -1,5 +1,5 @@
 <?php 
-	$title = 'Métodos';
+	$title = 'Tecnologias Web';
 	include_once('../header.php');
 ?>
 

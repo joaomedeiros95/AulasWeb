@@ -3,7 +3,7 @@
 	include_once('header.php');
 ?>
 
-	<form name="form" action="obrigado.html" method="get">
+	<form name="form" action="obrigado.php" method="get">
 		<p>Primeiro nome: <input type="text" name="firstname" autofocus></p>
 		<p>Sobrenome: <input type="text" name="lastname"></p>
 		<p>Endereço completo: <input type="text" name="endereco" size="100"></p>
