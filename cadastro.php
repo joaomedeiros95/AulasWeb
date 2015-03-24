@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Cadastro - WebEasy</title>
-</head>
-<body>
+<?php 
+	include_once('header.php');
+	$title = 'Cadastro';
+?>
+
 	<?php
 		include_once 'include/functions.php';
 		if($_SERVER["REQUEST_METHOD"] != "POST") {

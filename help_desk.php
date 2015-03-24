@@ -1,24 +1,8 @@
-<html>
-<head>
-	<title>Cadastro - WebEasy</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-</head>
-<body>
-	<center>
-		<h1>WebEasy</h1>
-		<h2>Cadastro de Usuários</h2>
-		<div id="menu">
-			<p>
-				<i><a href="index.html">Página Principal</a>	
-				<a href="about.html">Quem Somos?</a>	
-				<a href="conteudo.html">O que oferecemos?</a>
-				<a href="cadastro.html">Cadastro</a></i>
-			</p>
-		</div>
-	</center>
-	<?php
-		if($_SERVER["REQUEST_METHOD"] != "POST") {
-	?>
+<?php
+	include_once('header.php');
+	$title = 'Help Desk';
+	if($_SERVER["REQUEST_METHOD"] != "POST") {
+?>
 
 	<form name="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 		<p>Primeiro nome: <input type="text" name="firstname" autofocus></p>
@@ -90,7 +74,4 @@
 
 	?>
 
-	<br />
-	<center><p>João Eduardo Ribeiro de Medeiros - UFRN</p></center>
-</body>
-</html>
+<?php include_once('footer.php') ?>
