@@ -1,6 +1,6 @@
 <?php 
-	include_once('header.php');
 	$title = 'Obrigado';
+	include_once('header.php');
 ?>
 
 	<center>

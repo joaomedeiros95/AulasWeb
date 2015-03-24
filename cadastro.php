@@ -1,6 +1,6 @@
 <?php 
-	include_once('header.php');
 	$title = 'Cadastro';
+	include_once('header.php');
 ?>
 
 	<?php

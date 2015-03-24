@@ -1,6 +1,6 @@
 <?php 
-	include_once('header.php');
 	$title = 'Cadastro de usuários';
+	include_once('header.php');
 ?>
 
 	<form name="form" action="obrigado.html" method="get">

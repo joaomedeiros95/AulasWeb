@@ -1,6 +1,6 @@
 <?php 
-	include_once('header.php');
 	$title = 'O que oferecemos?';
+	include_once('header.php');
 ?>
 
 	<p>Escrevemos artigos sobre os seguintes assuntos:</p>

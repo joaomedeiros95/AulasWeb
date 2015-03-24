@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Login - WebEasy</title>
-</head>
-<body>
+
 	<?php
+		$title = ''; 
+		include_once('header.php'); 
 		include_once 'include/functions.php';
 		if($_SERVER["REQUEST_METHOD"] != "POST") {
 	?>
@@ -35,5 +32,6 @@
 			}
 		}
 	?>
-</body>
-</html>
+
+
+<?php include_once('footer.php') ?>

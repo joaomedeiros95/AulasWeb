@@ -1,5 +1,6 @@
-<?php 
-	include_once('header.php') 
+<?php
+	$title = ''; 
+	include_once('header.php'); 
 ?>
 
 	<h2>Artigos</h2>

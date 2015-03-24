@@ -1,6 +1,6 @@
 <?php 
-	include_once('header.php');
 	$title = 'Quem somos?';
+	include_once('header.php');
 ?>
 
 	<center><img src="imgs/joaomedeiros.jpg" width="200px" height="200px" /></center>

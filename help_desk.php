@@ -1,6 +1,6 @@
 <?php
-	include_once('header.php');
 	$title = 'Help Desk';
+	include_once('header.php');
 	if($_SERVER["REQUEST_METHOD"] != "POST") {
 ?>
 
