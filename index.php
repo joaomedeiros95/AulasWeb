@@ -1,4 +1,6 @@
-<?php include_once('header.php') ?>
+<?php 
+	include_once('header.php') 
+?>
 
 	<h2>Artigos</h2>
 	<ul>
