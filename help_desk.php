@@ -8,10 +8,10 @@
 		<p>Primeiro nome: <input type="text" name="firstname" autofocus></p>
 		<p>Sobrenome: <input type="text" name="lastname"></p>
 		<p>Endereço completo: <input type="text" name="endereco" size="100"></p>
-		<p>CPF (somente números): <input type="text" name="cpf" maxlength="11"></p>
+		<p>CPF (somente números): <input type="text" name="cpf" maxlength="11" onkeyup="formatarInteiros(this)"></p>
 		<p>Sexo: <input type="radio" name="sex" value="homem" checked>Homem <input type="radio" name="sex" value="mulher">Mulher</p>
 		<p>Aniversário (dd/mm/aaaa): <input type="text" name="bday" maxlength="10"></p>
-		<p>Seu website: <input type="url" name="homepage"> </p>
+		<p>Seu website: <input type="text" name="homepage"> </p>
 		<p>Email: <input type="email" name="email"></p>
 		<p>Senha: <input type="password" name="psw"></p>
 		<p>Repita a Senha: <input type="password" name="psw1"></p>
@@ -73,5 +73,6 @@
 		}
 
 	?>
+
 
 <?php include_once('footer.php') ?>
