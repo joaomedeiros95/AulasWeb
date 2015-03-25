@@ -2,10 +2,7 @@
 	<br />
 	<center><p>João Eduardo Ribeiro de Medeiros - UFRN</p></center>
 
-<script>
-function formatarInteiros(texto) {
-	return texto.replace((?!(\d))., '');
-}
-</script>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/webeasy.js"></script>
 </body>
 </html>
