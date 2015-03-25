@@ -1,3 +1,3 @@
-function formatarInteiros(texto) {
+function formatarInteiros() {
 	return texto.replace((?!(\d))., '');
 }
