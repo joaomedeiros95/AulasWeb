@@ -5,7 +5,7 @@
 	include_once('../header.php');
 ?>
 <body>
-	<?php include_once('menu.php'); ?>
+	<?php include_once('../menu.php'); ?>
 	<center><img src="../imgs/web.png" width="200px" height="200px" /></center>
 	<p>A World Wide Web (termo inglês que, em português, se traduz literalmente por "Teia mundial"), também conhecida como Web ou WWW, é um sistema de documentos em hipermídia (hipermédia) que são interligados e executados na Internet.</p>
 
