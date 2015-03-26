@@ -1,8 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php 
 	$title = 'Cadastro de usuários';
 	include_once('header.php');
 ?>
-
+<body>
+	<?php include_once('menu.php'); ?>
 	<form name="form" action="obrigado.php" method="get">
 		<p>Primeiro nome: <input type="text" name="firstname" autofocus></p>
 		<p>Sobrenome: <input type="text" name="lastname"></p>
@@ -17,6 +20,6 @@
 
 		<p><input type="submit" value="Enviar"> <input type="reset" value="Reiniciar"></p>
 	</form>
-
-
+</body>
 <?php include_once('footer.php') ?>
+</html>

@@ -1,8 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php 
 	$title = 'Cadastro';
 	include_once('header.php');
 ?>
+<body>
 
+	<?php include_once('menu.php'); ?>
 	<?php
 		include_once 'include/functions.php';
 		if($_SERVER["REQUEST_METHOD"] != "POST") {
@@ -34,6 +38,6 @@
 			}
 		}
 	?>
-
-
+</body>
 <?php include_once('footer.php') ?>
+</html>

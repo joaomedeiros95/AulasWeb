@@ -1,9 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php
 	$title = 'Help Desk';
 	include_once('header.php');
-	if($_SERVER["REQUEST_METHOD"] != "POST") {
 ?>
-
+<body>
+	<?php 
+		include_once('menu.php'); 
+		if($_SERVER["REQUEST_METHOD"] != "POST") {
+	?>
 	<form name="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 		<p>Primeiro nome: <input type="text" name="firstname" autofocus></p>
 		<p>Sobrenome: <input type="text" name="lastname"></p>
@@ -73,6 +78,6 @@
 		}
 
 	?>
-
-
+</body>
 <?php include_once('footer.php') ?>
+</html>

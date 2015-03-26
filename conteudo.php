@@ -1,8 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php 
 	$title = 'O que oferecemos?';
 	include_once('header.php');
 ?>
-
+<body>
+	<?php include_once('menu.php') ?>
 	<p>Escrevemos artigos sobre os seguintes assuntos:</p>
 	<table>
 		<tr>
@@ -22,5 +25,6 @@
 			<td>PHP</td>
 		</tr>
 	</table>
-
+</body>
 <?php include_once('footer.php') ?>
+</html>

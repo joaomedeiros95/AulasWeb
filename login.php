@@ -1,10 +1,16 @@
-
-	<?php
-		$title = ''; 
-		include_once('header.php'); 
-		include_once 'include/functions.php';
+<!DOCTYPE html>
+<html lang="en">
+<?php
+	$title = ''; 
+	include_once('header.php'); 
+	include_once 'include/functions.php';
+?>
+<body>
+	<?php 
+		include_once('menu.php');
 		if($_SERVER["REQUEST_METHOD"] != "POST") {
 	?>
+
 		<form name="form" action="" method="POST">
 			<p>Login: <input type="text" name="login" autofocus></p>
 			<p>Senha: <input type="password" name="senha"></p>
@@ -32,6 +38,6 @@
 			}
 		}
 	?>
-
-
+</body>
 <?php include_once('footer.php') ?>
+</html>
