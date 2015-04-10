@@ -7,6 +7,7 @@
 <body>
 	<?php 
 		include_once('menu.php'); 
+		echo '<div class="container">';
 		if($_SERVER["REQUEST_METHOD"] != "POST") {
 	?>
 	<form name="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
@@ -74,9 +75,9 @@
 
 			if($_POST['psw1'] != $_POST['psw']) 
 				echo "<br />As senhas não conferem";			
-
+			
 		}
-
+		echo '</div>';
 	?>
 </body>
 <?php include_once('footer.php') ?>

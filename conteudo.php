@@ -6,6 +6,7 @@
 ?>
 <body>
 	<?php include_once('menu.php') ?>
+<div class="container">
 	<p>Escrevemos artigos sobre os seguintes assuntos:</p>
 	<table>
 		<tr>
@@ -25,6 +26,7 @@
 			<td>PHP</td>
 		</tr>
 	</table>
+</div>
 </body>
 <?php include_once('footer.php') ?>
 </html>

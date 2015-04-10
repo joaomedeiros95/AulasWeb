@@ -1,5 +1,5 @@
 <footer>
-	<br />
-	<br />
-	<center><p>João Eduardo Ribeiro de Medeiros - UFRN</p></center>
+	<div class="footer">
+		<center><p>João Eduardo Ribeiro de Medeiros - UFRN</p></center>
+	</div>
 </footer>

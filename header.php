@@ -1,5 +1,6 @@
 <head>
 	<?php 
+	include_once 'config.php';
 	if($title != '')
 		$cabecalho = $title . ' - WebEasy';
 	else
@@ -8,6 +9,10 @@
 	<title><?php echo htmlspecialchars($cabecalho, ENT_QUOTES, 'UTF-8'); ?></title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="js/jquery-2.1.3.min.js"></script>
-	<script src="js/webeasy.js"></script>
+	<?php
+		echo '<script src= ' . getResource(JQUERY) . '></script>';
+		echo '<script src= ' . getResource(JSAULAS) . '></script>';
+		echo '<link type="text/css" rel="stylesheet" href="' . getResource(CSSPRINCIPAL) . '">';
+	?>
+
 </head>
