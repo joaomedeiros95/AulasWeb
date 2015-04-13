@@ -15,4 +15,8 @@
 		echo '<link type="text/css" rel="stylesheet" href="' . getResource(CSSPRINCIPAL) . '">';
 	?>
 
+	<!-- Favicon do site -->
+	<link rel="shortcut icon" href= <?php echo getResource(BASE) . '/favicon.ico' ?> />
+	<link rel="icon" href= <?php echo getResource(BASE) . '/favicon.ico' ?> type="image/x-icon" />
+	
 </head>
