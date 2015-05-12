@@ -1,3 +1,7 @@
-function formatarInteiros(texto) {
-	return texto.replace((?!(\d))., '');
+function validarFormularioObrigatorio(elemento) {
+	if(elemento.value == '') {
+		return true;
+	} else {
+		return false;
+	}
 }
