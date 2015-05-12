@@ -75,6 +75,26 @@ a:hover {
 	margin-bottom: 10px;
 }
 
+.validadorHidded {
+    display: none;
+}
+
+.validadorUnHidded {
+    display: block;
+}
+
+.validador {
+    color: red;
+    background-color: #f6f6f6;
+    padding: 5px;
+}
+
+.validador2 {
+    color: #ffe37f;
+    background-color: #f6f6f6;
+    padding: 5px;
+}
+
 
 
 
