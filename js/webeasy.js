@@ -57,3 +57,11 @@ function validarFormularioObrigatorio(elemento) {
         return false;
     }
 }
+
+function mostrarPost(elemento) {
+	var id = elemento.id + '-p';
+	if(document.getElementById(id).className == 'postHidded')
+		document.getElementById(id).className = 'postUnHidded';
+	else 
+		document.getElementById(id).className = 'postHidded';
+}

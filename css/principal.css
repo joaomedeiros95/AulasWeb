@@ -83,6 +83,16 @@ a:hover {
     display: block;
 }
 
+.postHidded {
+	display: none;
+	transition: all 0.5s;
+}
+
+.postUnHidded {
+	display: block;
+	transition: all 0.5s;
+}
+
 .validador {
     color: red;
     background-color: #f6f6f6;
