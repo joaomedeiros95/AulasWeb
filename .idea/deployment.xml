@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="DIgitalOcean">
+    <serverData>
+      <paths name="DIgitalOcean">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ufrn/aulasweb" local="$PROJECT_DIR$" web="/ufrn/aulasweb" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>
