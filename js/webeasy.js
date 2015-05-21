@@ -60,8 +60,20 @@ function validarFormularioObrigatorio(elemento) {
 
 function mostrarPost(elemento) {
 	var id = elemento.id + '-p';
-	if(document.getElementById(id).className == 'postHidded')
+	if(document.getElementById(id).className == 'postHidded') {
 		document.getElementById(id).className = 'postUnHidded';
-	else 
-		document.getElementById(id).className = 'postHidded';
+        $(".HiddedUnHidded").each(function() {
+           if( this.parentNode.id === elemento.id) {
+               this.src = "http://joaoemedeiros.com/ufrn/aulasweb/imgs/hide.png";
+           }
+        });
+    }
+	else {
+        document.getElementById(id).className = 'postHidded';
+        $(".HiddedUnHidded").each(function () {
+            if (this.parentNode.id === elemento.id) {
+                this.src = "http://joaoemedeiros.com/ufrn/aulasweb/imgs/unhide.png";
+            }
+        });
+    }
 }

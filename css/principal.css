@@ -105,6 +105,15 @@ a:hover {
     padding: 5px;
 }
 
+ul.paginaPrincipal {
+    list-style: none;
+}
+
+.post img {
+    width: 25px;
+    height: 25px;
+    vertical-align:middle
+}
 
 
 
